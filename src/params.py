@@ -4,7 +4,9 @@ By collecting multiple values per hyper-parameter in a list in param2requests,
 Ludwig will run jobs corresponding to all combination of hyper-parameter values. 
 Any hyper-parameter not overwritten by param2requests will be assigned its default value using param2default.
 
-Note: Ludwig relies on the dictionaries below to be named as-is. Do not rename them.
+Notes: 
+- Ludwig relies on the dictionaries below to be named as-is. Do not rename them.
+- Do not use dictionaries or other non-hashable objects as values in param2requests or param2default.
 
 """
 
